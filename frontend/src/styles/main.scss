@@ -1,0 +1,137 @@
+@use 'animations';
+
+/* Urbanist Font */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Color Variables */
+$light-shades: #F8F7F5;
+$light-accent: #AB9DC3;
+$main-color: #C9A0FF;
+$dark-accent: #8596C2;
+$dark-shades: #5D60B5;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $light-accent;
+
+        .cover {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 3;
+            background-color: $dark-shades;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: cover-fade-out 1500ms ease-out 1000ms;
+            animation-fill-mode: forwards;
+
+            .transparent-logo {
+                width: 35%;
+            }
+
+            .cover-caption {
+                position: absolute;
+                color: $light-shades;
+                margin-top: 18vh;
+                margin-right: 19vw;
+
+                font-size: large;
+                font-weight: 500;
+                
+            }
+        }
+
+        .email-form {
+            width: 30vw;
+            height: 70vh;
+            box-shadow: 3px 3px 10px 1px gray;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $light-shades;
+            .logo {
+                width: 10em;
+                height: 10em;
+                box-shadow: 3px 3px 15px 1px $light-shades;
+                border-radius: 50%;
+                margin-top: -5em;
+                margin-bottom: 4em;
+            }
+
+            .title {
+                color: black;
+                font-weight: normal;
+                text-transform: capitalize;
+                margin-bottom: .15em;
+            }
+
+            .subtitle {
+                color: $dark-accent;
+                font-size: medium;
+                font-weight: normal;
+            }
+
+            label {
+                font-size: larger;
+                margin-bottom: .15em;
+                color: $dark-shades;
+
+                &:first-of-type {
+                    margin-top: 2em;
+                }
+            }
+
+            input {
+                width: 40%;
+                height: 2.25em;
+                padding: 5px;
+                text-align: center;
+                margin-bottom: 1.5em;
+                border-radius: 5px;
+                border: 2px solid $main-color;
+                font-size: medium;
+
+                &:last-of-type {
+                    margin-top: 1.5em;
+                    height: 2.5em;
+                    font-size: larger;
+                    background-color: $main-color;
+                    color: $light-shades;
+
+                    &:hover {
+                        scale: 1.05;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+
+            .social-media-links {
+                width: 15%;
+                height: 5em;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .social-media-icon {
+                    width: 1.25em;
+                    height: 1.25em;
+                    color: $dark-shades;
+                }
+            }
+        }
+    }
+    
+}

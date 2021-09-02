@@ -1,0 +1,10 @@
+@keyframes cover-fade-out {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
