@@ -54,7 +54,7 @@ $dark-shades: #5D60B5;
         }
 
         .email-form {
-            width: 30vw;
+            width: 28vw;
             height: 70vh;
             box-shadow: 3px 3px 10px 1px gray;
             border-radius: 15px;
@@ -129,6 +129,7 @@ $dark-shades: #5D60B5;
                     width: 1.25em;
                     height: 1.25em;
                     color: $dark-shades;
+                    margin: 0 .5em;
                 }
             }
         }
