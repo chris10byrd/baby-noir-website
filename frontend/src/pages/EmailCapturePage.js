@@ -4,7 +4,6 @@ import Logo from '../res/logos/logo1x.png';
 import TransparentLogo from '../res/logos/logo-transparent1x.png';
 import InstagramLogo from '@material-ui/icons/Instagram';
 import FacebookLogo from '@material-ui/icons/Facebook';
-import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 
 class emailCapture extends Component {
     render() {
