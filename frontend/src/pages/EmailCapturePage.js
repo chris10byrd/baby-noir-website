@@ -24,11 +24,11 @@ class emailCapture extends Component {
                             <h1 className="title">Baby Noir Clothing</h1>
                             <h2 className="subtitle">Don't miss the latest updates!</h2>
                             <label htmlFor="first-name">First Name</label>
-                            <input type="name" name="first-name" />
+                            <input type="name" name="first-name" onChange={handleChange} />
                             <label htmlFor="last-name">Last Name</label>
-                            <input type="name" name="last-name" />
+                            <input type="name" name="last-name" onChange={handleChange} />
                             <label htmlFor="email">Email</label>
-                            <input type="email" name="email" />
+                            <input type="email" name="email" onChange={handleChange} />
                             <input type="submit" value="SUBMIT" />
                             <div className="social-media-links">
                                 <a href="https://www.instagram.com/" ><InstagramLogo className='social-media-icon' /></a>
