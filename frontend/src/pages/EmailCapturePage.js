@@ -13,7 +13,7 @@ class emailCapture extends Component {
                     <img src={TransparentLogo} alt="Baby Noir Logo" className='transparent-logo' />
                     <caption className='cover-caption'>Premier Baby Clothing</caption>
                 </div>
-                <form name="email-form" className="email-form" method="post" data-netlify="true">
+                <form name="email-form" className="email-form" method="post" netlify>
                     <img src={Logo} alt="logo" className='logo' />
                     <h1 className="title">Baby Noir Clothing</h1>
                     <h2 className="subtitle">Don't miss the latest updates!</h2>
