@@ -14,7 +14,7 @@ class emailCapture extends Component {
                     <img src={TransparentLogo} alt="Baby Noir Logo" className='transparent-logo' />
                     <caption className='cover-caption'>Premier Baby Clothing</caption>
                 </div>
-                <NetlifyForm name="email-form" className="email-form" action="/">
+                <NetlifyForm name="email-form" action="/thanks" honeypotName='bot-field'>
                     {({ handleChange, success, error }) => (
                         <>
                             <Honeypot />
